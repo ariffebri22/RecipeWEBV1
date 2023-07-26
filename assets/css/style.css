@@ -1,0 +1,247 @@
+* {
+    font-family: "Poppins", arial;
+    font-weight: 500;
+}
+
+nav ul li {
+    color: #2e266f !important;
+}
+
+.cover {
+    max-width: 100%;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #2e266f;
+}
+
+#home img {
+    transition: 0.4s;
+}
+
+#home img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.side {
+    position: absolute;
+    width: 20rem;
+    height: 50rem;
+    z-index: -99;
+    right: 0;
+}
+
+.inputSearch {
+    width: 27em;
+    height: 3em;
+    /* background-color: #efefef; */
+}
+
+.inputSearch input {
+    border-left: none;
+    font-size: small !important;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.inputSearch input::placeholder {
+    color: #b6b6b6;
+}
+
+#popularforyou {
+    margin-top: 13rem;
+}
+
+#popularforyou h3 {
+    color: #3f3a3a;
+}
+
+.ssquare {
+    width: auto;
+}
+
+.square {
+    height: 4.5rem;
+    width: 1rem;
+}
+
+.circle {
+    margin-top: 11rem;
+}
+
+.circle1 {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.circle2 {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.circle-round {
+    background-color: #e6e6e6;
+    width: 8px;
+    height: 8px;
+    margin-left: 20px;
+}
+
+.squareborder {
+    background-color: transparent;
+    border: 2px solid #efc81a;
+    width: 22rem;
+    height: 26rem;
+    z-index: -99;
+    margin-left: 11rem;
+    margin-top: 4rem;
+}
+
+.content {
+    margin: auto;
+    width: 20rem;
+    color: #3f3a3a;
+}
+
+.content p {
+    font-size: 12px;
+}
+
+.content button {
+    font-size: 12px;
+    color: white;
+    width: 7rem;
+    height: 3rem;
+}
+
+#newrecipe {
+    margin-top: 13rem;
+}
+
+#newrecipe h3 {
+    color: #3f3a3a;
+}
+
+.squaresolid {
+    width: 21rem;
+    height: 29rem;
+    z-index: -99;
+    left: 0;
+}
+
+#popularrecipe {
+    margin-top: 13rem;
+}
+
+#popularrecipe h3 {
+    color: #3f3a3a;
+}
+
+.image1 {
+    background-image: url("../img/Rectangle\ 320.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image1 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+.image2 {
+    background-image: url("../img/Rectangle\ 321.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image2 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+.image3 {
+    background-image: url("../img/Rectangle\ 316.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image3 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+.image4 {
+    background-image: url("../img/Rectangle\ 317.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image4 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+.image5 {
+    background-image: url("../img/Rectangle\ 318.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image5 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+.image6 {
+    background-image: url("../img/Rectangle\ 319.png");
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image6 p {
+    font-size: 15px;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+
+footer {
+    height: 30rem;
+    margin-top: 13rem;
+}
+
+footer p {
+    color: #2e266f;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+footer h6 {
+    color: #707070;
+}

@@ -1,0 +1,43 @@
+* {
+    font-family: "Poppins", arial;
+}
+
+p {
+    color: #8692a6;
+}
+
+form {
+    font-size: 13px;
+}
+
+form .btn {
+    width: 100%;
+    font-size: small;
+}
+
+#exampleInputName1 {
+    font-size: 13px;
+    height: 3rem;
+}
+
+#exampleInputEmail1 {
+    font-size: 13px;
+    height: 3rem;
+}
+
+#exampleInputPassword1 {
+    font-size: 13px;
+    height: 3rem;
+}
+
+.head p {
+    font-size: small;
+}
+
+.have p {
+    font-size: x-small;
+}
+
+.forgot p {
+    font-size: x-small;
+}

@@ -1,0 +1,194 @@
+* {
+    font-family: "Poppins", arial;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #2e266f;
+}
+
+.side1 {
+    position: absolute;
+    width: 2rem;
+    height: 50rem;
+    z-index: -99;
+    margin-top: 16rem;
+    right: 0;
+}
+
+.side2 {
+    position: absolute;
+    width: 2rem;
+    height: 50rem;
+    z-index: -99;
+    margin-top: 80rem;
+    right: 0;
+}
+
+.inputSearch {
+    width: 27em;
+    height: 3em;
+    /* background-color: #efefef; */
+}
+
+.inputSearch input {
+    border-left: none;
+    font-size: small !important;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.inputSearch input::placeholder {
+    color: #b6b6b6;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 3rem;
+    background-color: #efc81a;
+    margin-right: 1rem;
+}
+
+.user1 {
+    /* background-color: red; */
+    width: 11rem;
+    /* height: 4rem; */
+}
+
+.user1::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 3rem;
+    background-color: #efc81a;
+    margin-left: 1rem;
+}
+
+.btnSearch {
+    bottom: 0;
+    height: 48px;
+    margin-top: 8.2rem;
+    padding: 0px 2rem;
+    color: white;
+}
+
+.btnHelp button {
+    font-size: small;
+    color: white;
+    padding: 5px 1rem;
+}
+
+.btnHelp button:nth-child(3) {
+    background-color: #00e092;
+}
+
+.btnHelp button:nth-child(4) {
+    background-color: #00e092;
+}
+
+.titleDesc p {
+    color: #3f3a3a;
+    cursor: pointer;
+}
+
+.titleDesc button {
+    color: white;
+    cursor: pointer;
+    font-size: x-small;
+}
+
+.desc {
+    width: 9rem;
+}
+
+.desc p {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #3f3a3a;
+}
+
+.page {
+    margin-top: 7rem;
+    color: #3f3a3a;
+}
+
+.homedetail img {
+    width: 45rem;
+    height: 28rem;
+}
+
+.listingre ul {
+    list-style-type: "- ";
+    margin-left: 15px;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.btnlike {
+    background-image: url("../img/iconlike1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.btnlike:active {
+    background-image: url("../img/iconlike2.png");
+}
+
+.btnsave {
+    background-image: url("../img/iconsave1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.btnsave:active {
+    background-image: url("../img/iconsave2.png");
+}
+
+.btncomment {
+    width: 20rem;
+    height: 2.5rem;
+    font-size: small;
+}
+
+footer {
+    height: 30rem;
+    margin-top: 13rem;
+}
+
+footer p {
+    color: #2e266f;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+footer h6 {
+    color: #707070;
+}
+
+.list {
+    margin-top: 10rem;
+    font-size: small;
+}
+
+.list li {
+    color: #707070;
+}
+
+.text {
+    height: 100%;
+}
+
+.eat {
+    margin-top: 8rem;
+}

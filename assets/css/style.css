@@ -151,6 +151,7 @@ nav ul li {
 }
 
 .image1 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -166,6 +167,7 @@ nav ul li {
 }
 
 .image2 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -181,6 +183,7 @@ nav ul li {
 }
 
 .image3 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -196,6 +199,7 @@ nav ul li {
 }
 
 .image4 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -211,6 +215,7 @@ nav ul li {
 }
 
 .image5 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -226,6 +231,7 @@ nav ul li {
 }
 
 .image6 p {
+    color: #3f3a3a;
     font-size: 15px;
     margin-top: 11rem;
     margin-left: 1rem;
@@ -244,4 +250,21 @@ footer p {
 
 footer h6 {
     color: #707070;
+}
+
+.list {
+    margin-top: 10rem;
+    font-size: small;
+}
+
+.list li {
+    color: #707070;
+}
+
+.text {
+    height: 100%;
+}
+
+.eat {
+    margin-top: 8rem;
 }

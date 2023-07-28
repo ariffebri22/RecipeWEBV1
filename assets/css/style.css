@@ -3,12 +3,8 @@
     font-weight: 500;
 }
 
-nav ul li {
-    color: #2e266f !important;
-}
-
-.cover {
-    max-width: 100%;
+#home {
+    margin-top: 5rem;
 }
 
 #home h1 {
@@ -20,9 +16,28 @@ nav ul li {
     transition: 0.4s;
 }
 
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+/* CSS untuk mengatur background navbar saat di-scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
 #home img:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 3rem;
+    background-color: white;
+    margin-right: 1rem;
 }
 
 .side {
@@ -31,6 +46,7 @@ nav ul li {
     height: 50rem;
     z-index: -99;
     right: 0;
+    top: 0;
 }
 
 .inputSearch {

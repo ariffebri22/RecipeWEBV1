@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Search</title>
+        <title>Detail Profile</title>
         <link rel="icon" href="../../assets/img/icon.png" type="image/x-icon" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="../../assets/css/menu.css" />
+        <link rel="stylesheet" href="../../assets/css/profile.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis fixed-top">
@@ -21,13 +21,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
                             <li class="nav-item me-5">
-                                <a class="nav-link" href="../menu/home.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="../menu/home.html">Home</a>
                             </li>
                             <li class="nav-item me-5">
                                 <a class="nav-link" href="../menu/addMenu.html">Add Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../menu/searchMenu.html">Search Menu</a>
+                                <a class="nav-link" href="../menu/searchMenu.html">Search Menu</a>
                             </li>
                         </ul>
                     </div>
@@ -48,28 +48,64 @@
 
         <section id="home">
             <div class="container">
-                <div class="side1 bg-warning"></div>
-                <div class="side2 bg-warning"></div>
                 <div class="row">
-                    <div class="col-md-8 mt-5 ps-5 d-flex">
-                        <div class="cover">
-                            <h1>Discover Recipe <br />& Delicious Food</h1>
-                            <div class="input-group input-group-lg mt-3 inputSearch">
-                                <input type="text" class="form-control bg-body-secondary ps-4" placeholder="search restaurant, food" aria-label="search restaurant, food" aria-describedby="inputGroup-sizing-lg" />
+                    <div class="col-md-4 mt-5 ps-5">
+                        <div class="user d-flex align-items-center ps-5">
+                            <div class="photo me-4">
+                                <img src="../../assets/img/profile.png" alt="Search" width="40" />
+                            </div>
+                            <div class="text">
+                                <p class="mb-0">Ayudia</p>
+                                <p class="mb-0">
+                                    <a href="#" class="text-dark"><strong>10 Recipes</strong></a>
+                                </p>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-warning ms-4 btnSearch">Search</button>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 mt-5">
+                        <div class="date d-flex align-items-center ps-5">
+                            <div class="text text-end ps-5">
+                                <p class="mt-3">21 February 2023</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms-4 mt-4">
                     <div class="col mt-4 ps-5 btnHelp">
-                        <button type="button" class="btn btn-warning me-4">New</button>
-                        <button type="button" class="btn btn-warning me-4">Popular</button>
-                        <button type="button" class="btn me-4">Vegetarian</button>
-                        <button type="button" class="btn">Breakfast</button>
+                        <ul class="list-group list-group-horizontal-md">
+                            <li class="list-group-item me-5">
+                                <a href="./detailProfileRecipe.html" class="fs-4 text-secondary">Recipe</a>
+                            </li>
+                            <li class="list-group-item me-5">
+                                <a href="./detailProfileBookmark.html" class="fs-4">Bookmark</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="fs-4 text-secondary">Liked</a>
+                            </li>
+                        </ul>
+                        <hr class="border ms-3 border-3 border-warning border-solid opacity-100 listMenu" />
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms-4 ps-3">
+                    <div class="col-md-4 mt-5 ps-5">
+                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                    </div>
+                    <div class="col-md-4 mt-5 mg-primary titleDesc">
+                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                        <div class="desc">
+                            <p>
+                                Ingredients: <br />
+                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                        <div class="author mt-3 d-flex">
+                            <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-4 ps-3">
                     <div class="col-md-4 mt-5 ps-5">
                         <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
                     </div>
@@ -83,12 +119,11 @@
                         </div>
                         <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
                         <div class="author mt-3 d-flex">
-                            <img src="../../assets/img/4662c85cb7661f579e2c9baff0ce5fdc.png" alt="Search" width="40" class="me-3 rounded-circle" />
-                            <h6 class="mt-2">Karen</h6>
+                            <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms-4 ps-3">
                     <div class="col-md-4 mt-5 ps-5">
                         <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
                     </div>
@@ -102,12 +137,11 @@
                         </div>
                         <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
                         <div class="author mt-3 d-flex">
-                            <img src="../../assets/img/4662c85cb7661f579e2c9baff0ce5fdc.png" alt="Search" width="40" class="me-3 rounded-circle" />
-                            <h6 class="mt-2">Karen</h6>
+                            <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms-4 ps-3">
                     <div class="col-md-4 mt-5 ps-5">
                         <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
                     </div>
@@ -121,12 +155,11 @@
                         </div>
                         <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
                         <div class="author mt-3 d-flex">
-                            <img src="../../assets/img/4662c85cb7661f579e2c9baff0ce5fdc.png" alt="Search" width="40" class="me-3 rounded-circle" />
-                            <h6 class="mt-2">Karen</h6>
+                            <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ms-4 ps-3">
                     <div class="col-md-4 mt-5 ps-5">
                         <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
                     </div>
@@ -140,33 +173,13 @@
                         </div>
                         <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
                         <div class="author mt-3 d-flex">
-                            <img src="../../assets/img/4662c85cb7661f579e2c9baff0ce5fdc.png" alt="Search" width="40" class="me-3 rounded-circle" />
-                            <h6 class="mt-2">Karen</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
-                    </div>
-                    <div class="col-md-8 mt-5 titleDesc">
-                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <img src="../../assets/img/4662c85cb7661f579e2c9baff0ce5fdc.png" alt="Search" width="40" class="me-3 rounded-circle" />
-                            <h6 class="mt-2">Karen</h6>
+                            <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col d-flex align-items-center justify-content-center ms-5 page">
-                        <h5 class="mt-2">Show 1-5 From 20</h5>
+                        <h5 class="mt-2">Show 6-10 From 10</h5>
                         <button type="button" class="btn btn-warning ms-5 text-light">Next</button>
                     </div>
                 </div>

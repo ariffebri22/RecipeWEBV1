@@ -73,28 +73,6 @@
     margin-left: 1rem;
 }
 
-.btnSearch {
-    bottom: 0;
-    height: 48px;
-    margin-top: 8.2rem;
-    padding: 0px 2rem;
-    color: white;
-}
-
-.btnHelp button {
-    font-size: small;
-    color: white;
-    padding: 5px 1rem;
-}
-
-.btnHelp button:nth-child(3) {
-    background-color: #00e092;
-}
-
-.btnHelp button:nth-child(4) {
-    background-color: #00e092;
-}
-
 .titleDesc p {
     color: #3f3a3a;
     cursor: pointer;
@@ -133,89 +111,29 @@
     text-transform: capitalize;
 }
 
-.btnlike {
-    background-image: url("../img/iconlike1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
+.btnEdit {
+    background-color: #30c0f3;
 }
 
-.btnlike:active {
-    background-image: url("../img/iconlike2.png");
+.btnDelete {
+    background-color: #f57e71;
 }
 
-.btnsave {
-    background-image: url("../img/iconsave1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
+.listMenu {
+    width: 27rem;
 }
 
-.btnsave:active {
-    background-image: url("../img/iconsave2.png");
+.btnHelp ul li {
+    border: none;
+    background-color: transparent;
 }
 
-.btncomment {
-    width: 20rem;
-    height: 2.5rem;
-    font-size: small;
+.btnHelp ul li a {
+    text-decoration: none;
 }
 
-.upload-container {
-    position: relative;
-    width: 100%;
-    height: 25rem;
-    border: 1px solid #ced4da;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.custom-file-upload {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #007bff;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    z-index: 1; /* Tombol di atas gambar preview */
-}
-
-.custom-file-upload:hover {
-    background-color: #0056b3;
-}
-
-/* CSS untuk mengatur gaya div preview */
-.image-preview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.image-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.form-select {
-    width: 10rem;
-}
-
-.btnpost {
-    width: 15rem;
+.btnHelp ul li a:nth-child(1) {
+    color: #3f3a3a;
 }
 
 .navbar {
@@ -233,6 +151,29 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.headForm p {
+    color: #2e266f;
+    font-size: small;
+}
+
+.editProPage {
+    font-size: smaller;
+}
+
+.editProPage button {
+    width: 100%;
+    font-size: smaller;
+}
+
+.editProPage input {
+    font-size: smaller;
+    height: 2.5rem;
+}
+
+.have p {
+    font-size: x-small;
 }
 
 footer {

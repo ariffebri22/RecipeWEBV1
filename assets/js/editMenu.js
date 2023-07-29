@@ -28,10 +28,17 @@ myForm.addEventListener("submit", function (event) {
     }
 
     const uploadButton = document.getElementById("uploadButton");
-    uploadButton.innerText = "Ganti Foto";
+    uploadButton.innerText = "Change Photo";
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const nameInput = document.getElementById("titleFill");
-    nameInput.value = "Egg Sandwich"; // Ganti dengan isi input yang Anda inginkan
+function logout() {
+    window.location.href = "../../index.html";
+}
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 0) {
+        navbar.classList.add("navbar-scrolled");
+    } else {
+        navbar.classList.remove("navbar-scrolled");
+    }
 });

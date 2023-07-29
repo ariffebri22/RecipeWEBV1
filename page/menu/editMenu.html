@@ -12,19 +12,19 @@
         <link rel="stylesheet" href="../../assets/css/menu.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis fixed-top">
             <div class="container mt-3">
                 <div class="burger">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="navbarBack()">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
                             <li class="nav-item me-5">
-                                <a class="nav-link" href="../menu/home.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="../menu/home.html">Home</a>
                             </li>
                             <li class="nav-item me-5">
-                                <a class="nav-link active" aria-current="page" href="../menu/addMenu.html">Add Menu</a>
+                                <a class="nav-link" href="../menu/addMenu.html">Add Menu</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../menu/searchMenu.html">Search Menu</a>
@@ -34,17 +34,29 @@
                 </div>
                 <div class="user d-flex justify-content-center align-items-center">
                     <div class="photo me-4">
-                        <img src="../../assets/img/profile.png" alt="Search" width="40" />
+                        <img src="../../assets/img/profile.png" alt="Search" width="40" onclick="pageProfile()"/>
                     </div>
                     <div class="text">
                         <p class="mb-0">Ayudia</p>
                         <p class="mb-0">
-                            <a href="#" class="text-dark"><strong>Logout</strong></a>
+                            <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#logoutModal"><strong>Logout</strong></a>
                         </p>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">You want to logout?</div>
+                    <div class="modal-footer d-block mt-4">
+                        <button type="button" class="btn btn-warning btnYes text-light" onclick="logout()">Yes</button>
+                        <button type="button" class="btn btn-secondary btnCancel text-light" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="home">
             <div class="container mt-5">
@@ -91,32 +103,20 @@
             </div>
         </footer>
         <script>
-            window.addEventListener("scroll", function () {
-                const navbar = document.querySelector(".navbar");
-                if (window.scrollY > 0) {
-                    navbar.classList.add("navbar-scrolled");
-                } else {
-                    navbar.classList.remove("navbar-scrolled");
-                }
-            });
-
             document.addEventListener("DOMContentLoaded", function () {
                 const nameInput = document.getElementById("titleFill");
                 nameInput.value = "Egg Sandwich";
-            });
 
-            document.addEventListener("DOMContentLoaded", function () {
-                const nameInput = document.getElementById("descriptionFill");
-                nameInput.value = " - 2 eggs \n - 2 tbsp mayonnaise \n - 3 slices bread \n - a little butter";
-            });
+                const descriptionInput = document.getElementById("descriptionFill");
+                descriptionInput.value = " - 2 eggs \n - 2 tbsp mayonnaise \n - 3 slices bread \n - a little butter";
 
-            document.addEventListener("DOMContentLoaded", function () {
                 const selectedCategory = "main-course"; // Ganti dengan nilai opsi dropdown yang Anda inginkan
                 const categoryDropdown = document.getElementById("categoryFill");
                 categoryDropdown.value = selectedCategory;
             });
         </script>
-        <script src="../../assets/js/menu.js"></script>
+        <script src="../../assets/js/script.js"></script>
+        <script src="../../assets/js/editMenu.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>

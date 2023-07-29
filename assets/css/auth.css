@@ -41,3 +41,51 @@ form .btn {
 .forgot p {
     font-size: x-small;
 }
+
+.pageMain {
+    width: 50%;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    color: #ffc107; /* Warna kuning */
+    font-size: 24px;
+}
+
+.modal-footer {
+    border-top: none;
+    text-align: center;
+}
+
+.btnYes {
+    width: 20rem;
+}
+
+.btnCancel {
+    width: 20rem;
+    background-color: #e7e7e7;
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .pageMain {
+        width: 50rem;
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageMain {
+        margin-top: 1rem;
+    }
+}

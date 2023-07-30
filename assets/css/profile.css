@@ -77,6 +77,20 @@
     margin-left: 1rem;
 }
 
+.dropdown {
+    display: none;
+}
+
+.headUser {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.titleDesc {
+    margin-top: 3rem;
+}
+
 .titleDesc p {
     color: #3f3a3a;
     cursor: pointer;
@@ -164,6 +178,7 @@
 
 .editProPage {
     font-size: smaller;
+    padding: 0px 25rem;
 }
 
 .editProPage button {
@@ -205,7 +220,17 @@ footer h6 {
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     height: 100%;
+}
+
+.date {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .eat {
@@ -241,4 +266,43 @@ footer h6 {
     width: 20rem;
     background-color: #e7e7e7;
     border: none;
+}
+
+@media (max-width: 992px) {
+    .titleDesc {
+        margin-left: 9rem;
+    }
+
+    .editProPage {
+        padding: 5rem 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleDesc {
+        margin-left: 2.3rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .date {
+        display: flex;
+        justify-content: start;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .btnHelp .list-group {
+        display: none;
+    }
+
+    .listMenu {
+        display: none;
+    }
+
+    .editProPage {
+        padding: 0px 1rem;
+    }
 }

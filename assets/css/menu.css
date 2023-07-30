@@ -80,7 +80,7 @@
 .btnSearch {
     bottom: 0;
     height: 48px;
-    margin-top: 8.2rem;
+    margin-top: 7.7rem;
     padding: 0px 2rem;
     color: white;
 }
@@ -90,10 +90,15 @@
     margin-right: 6rem;
 }
 
+.btnHelp {
+    margin-top: 2rem;
+}
+
 .btnHelp button {
     font-size: small;
     color: white;
     padding: 5px 1rem;
+    margin-right: 1.5rem;
 }
 
 .btnHelp button:nth-child(3) {
@@ -102,6 +107,10 @@
 
 .btnHelp button:nth-child(4) {
     background-color: #00e092;
+}
+
+.titleDesc {
+    margin-top: 3rem;
 }
 
 .titleDesc p {
@@ -368,6 +377,10 @@ footer h6 {
     .listingre {
         margin-left: 0;
     }
+
+    .titleDesc {
+        margin-left: 9rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -404,5 +417,46 @@ footer h6 {
 
     .fillComment {
         text-align: center;
+    }
+
+    .titleDesc {
+        margin-left: 2.3rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .side1 {
+        display: none;
+    }
+
+    .side2 {
+        display: none;
+    }
+
+    #discover {
+        font-size: 1.5rem !important;
+    }
+
+    .inputSearch {
+        width: 13rem;
+    }
+
+    .btnSearch {
+        width: auto;
+        font-size: medium;
+        padding: 0px 4px;
+        margin-top: 4.2rem;
+    }
+
+    .btnHelp {
+        margin-top: 1rem;
+    }
+
+    .btnHelp button {
+        margin-right: 1.2rem;
+    }
+
+    .btnHelp button:nth-child(4) {
+        display: none;
     }
 }

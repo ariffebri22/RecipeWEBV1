@@ -188,7 +188,7 @@
     height: 40px;
 }
 
-.btnlike:active {
+.btnlike:focus {
     background-image: url("../img/iconlike2.png");
 }
 
@@ -199,9 +199,10 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
+    margin-left: 3rem;
 }
 
-.btnsave:active {
+.btnsave:focus {
     background-image: url("../img/iconsave2.png");
 }
 
@@ -209,10 +210,6 @@
     width: 20rem;
     height: 2.5rem;
     font-size: small;
-}
-
-.comment {
-    padding-left: 6rem;
 }
 
 .upload-container {
@@ -379,10 +376,19 @@ footer h6 {
     }
 
     .comment {
-        padding-left: 0;
+        padding-left: 0rem;
     }
+
+    .fillComment {
+        padding-left: 5rem;
+    }
+
     .btnSL {
         margin-left: 0;
+    }
+
+    .btnsave {
+        margin-left: 3.3rem;
     }
 
     .listingre {
@@ -401,11 +407,11 @@ footer h6 {
     }
 
     .date {
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
 
     .listingre {
-        margin-left: 10px;
+        margin-left: 1.5rem;
         margin-right: 10px;
     }
 
@@ -428,6 +434,7 @@ footer h6 {
 
     .fillComment {
         text-align: center;
+        padding-left: 0;
     }
 
     .titleDesc {
@@ -452,6 +459,10 @@ footer h6 {
         width: 13rem;
     }
 
+    .btnsave {
+        margin-left: 1rem;
+    }
+
     .btnSearch {
         width: auto;
         font-size: medium;
@@ -469,5 +480,10 @@ footer h6 {
 
     .btnHelp button:nth-child(4) {
         display: none;
+    }
+
+    .date {
+        display: flex;
+        justify-content: start;
     }
 }

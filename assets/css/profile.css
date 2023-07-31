@@ -303,6 +303,7 @@ footer h6 {
 
     .dropdown {
         display: block;
+        width: 18.5rem;
     }
 
     .btnHelp .list-group {
@@ -315,5 +316,20 @@ footer h6 {
 
     .editProPage {
         padding: 0px 1rem;
+    }
+
+    .btndd {
+        background-color: transparent;
+        width: 100%;
+        color: #3f3a3a;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu .list-group-item {
+        width: 100%;
     }
 }

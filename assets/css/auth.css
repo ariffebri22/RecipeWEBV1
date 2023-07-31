@@ -77,6 +77,17 @@ form .btn {
     border: none;
 }
 
+.form-check-input:checked {
+    background-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+    border: 1px solid white;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
 @media (max-width: 992px) {
     .pageMain {
         width: 50rem;

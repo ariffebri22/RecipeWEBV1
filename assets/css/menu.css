@@ -273,9 +273,20 @@
     transition: background-color 0.3s;
 }
 
-/* CSS untuk mengatur background navbar saat di-scroll */
 .navbar-scrolled {
     background-color: #fff;
+}
+
+.form-check-input:checked {
+    background-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+    border: 1px solid white;
+}
+
+/* CSS Kustom untuk Input */
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
 }
 
 .bg-preview {

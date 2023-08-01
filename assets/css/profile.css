@@ -77,10 +77,6 @@
     margin-left: 1rem;
 }
 
-.dropdown {
-    display: none;
-}
-
 .headUser {
     margin-top: 2rem;
     display: flex;
@@ -152,6 +148,21 @@
 
 .btnHelp ul li a:nth-child(1) {
     color: #3f3a3a;
+}
+
+.nav-tabs .nav-link {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #c4c4c4;
+    background-color: #fff;
+    border: #fff;
+    margin-right: 50%;
+}
+
+.nav-tabs .nav-link.active {
+    color: #efc81a;
+    background-color: #0000;
 }
 
 .navbar {
@@ -301,17 +312,12 @@ footer h6 {
         justify-content: start;
     }
 
-    .dropdown {
-        display: block;
-        width: 18.5rem;
-    }
-
     .btnHelp .list-group {
         display: none;
     }
 
     .listMenu {
-        display: none;
+        width: 18rem;
     }
 
     .editProPage {
@@ -324,12 +330,7 @@ footer h6 {
         color: #3f3a3a;
     }
 
-    .dropdown-menu {
-        width: 100%;
-        text-align: center;
-    }
-
-    .dropdown-menu .list-group-item {
-        width: 100%;
+    .nav-tabs .nav-link {
+        font-size: 1.2rem;
     }
 }

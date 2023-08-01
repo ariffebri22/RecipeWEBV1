@@ -84,133 +84,172 @@
                 </div>
                 <div class="row ms-4 mt-4">
                     <div class="col mt-4 btnHelp">
-                        <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item me-5">
-                                <a href="./detailProfileRecipe.html" class="fs-4">Recipe</a>
+                        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active border-0" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Recipe</button>
                             </li>
-                            <li class="list-group-item me-5">
-                                <a href="./detailProfileBookmark.html" class="fs-4 text-secondary">Bookmark</a>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Bookmark</button>
                             </li>
-                            <li class="list-group-item">
-                                <a href="#" class="fs-4 text-secondary">Liked</a>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Liked</button>
                             </li>
                         </ul>
-                        <div class="dropdown ms-3">
-                            <button class="btn btn-secondary dropdown-toggle btndd" type="button" data-bs-toggle="dropdown" aria-expanded="false">Recipe</button>
-                            <ul class="dropdown-menu">
-                                <li class="list-group-item me-5">
-                                    <a href="./detailProfileRecipe.html" class="fs-4">Recipe</a>
-                                </li>
-                                <li class="list-group-item me-5">
-                                    <a href="./detailProfileBookmark.html" class="fs-4 text-secondary">Bookmark</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#" class="fs-4 text-secondary">Liked</a>
-                                </li>
-                            </ul>
-                        </div>
+
                         <hr class="border ms-3 border-3 border-warning border-solid opacity-100 listMenu" />
                     </div>
                 </div>
-                <div class="row ms-1">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 313.png" alt="Search" width="300" class="rounded-3" />
-                    </div>
-                    <div class="col-md-4 titleDesc">
-                        <p class="fs-5 mt-3">Egg<br />Sandwich</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 313.png" alt="Search" width="300" class="rounded-3" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Egg<br />Sandwich</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
+                                    <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
-                            <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
+                                    <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
+                                    <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
+                                    <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
+                                    <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ms-1">
+                            <div class="col d-flex align-items-center justify-content-center ms-5 page">
+                                <h5 class="mt-2">Show 6-10 From 10</h5>
+                                <button type="button" class="btn btn-warning ms-5 text-light">Next</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row ms-1">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
-                    </div>
-                    <div class="col-md-4 titleDesc">
-                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
-                            <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                        <div class="row ms-1">
+                            <div class="col-md-4 mt-5 ps-5">
+                                <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
+                            </div>
+                            <div class="col-md-4 titleDesc">
+                                <p class="fs-5 mt-3">Bomb<br />Chicken</p>
+                                <div class="desc">
+                                    <p>
+                                        Ingredients: <br />
+                                        chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
+                                <div class="author mt-3 d-flex">
+                                    <button type="button" class="btn me-4 btnDelete">Delete From Bookmark</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row ms-1">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
-                    </div>
-                    <div class="col-md-4 titleDesc">
-                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
-                            <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ms-1">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
-                    </div>
-                    <div class="col-md-4 titleDesc">
-                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
-                            <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
+                        <div class="row ms-1">
+                            <div class="col d-flex align-items-center justify-content-center ms-5 page">
+                                <h5 class="mt-2">Show 6-10 From 10</h5>
+                                <button type="button" class="btn btn-warning ms-5 text-light">Next</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row ms-1">
-                    <div class="col-md-4 mt-5 ps-5">
-                        <img src="../../assets/img/Rectangle 321.png" alt="Search" width="300" />
-                    </div>
-                    <div class="col-md-4 titleDesc">
-                        <p class="fs-5 mt-3">Bomb<br />Chicken</p>
-                        <div class="desc">
-                            <p>
-                                Ingredients: <br />
-                                chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed
-                            </p>
-                        </div>
-                        <button type="button" class="btn btn-warning">10 Likes - 12 Comment - 3 Bookmark</button>
-                        <div class="author mt-3 d-flex">
-                            <button type="button" class="btn me-4 btnEdit" onclick="pageEditMenu()">Edit Menu</button>
-                            <button type="button" class="btn me-4 btnDelete">Delete Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ms-1">
-                    <div class="col d-flex align-items-center justify-content-center ms-5 page">
-                        <h5 class="mt-2">Show 6-10 From 10</h5>
-                        <button type="button" class="btn btn-warning ms-5 text-light">Next</button>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <h3>Ini adalah konten Tab 3</h3>
+                        <p>Isi dari tab 3 akan ditampilkan di sini.</p>
                     </div>
                 </div>
             </div>

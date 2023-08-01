@@ -35,3 +35,31 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("navbar-scrolled");
     }
 });
+
+function validateFormChange() {
+    const newPassword = document.getElementById("newpassword");
+    const oldPassword = document.getElementById("oldpassword");
+
+    // Trim the input values to remove leading/trailing whitespaces
+    const trimmedNewPassword = newPassword.value.trim();
+    const trimmedOldPassword = oldPassword.value.trim();
+
+    if (trimmedNewPassword === "" || trimmedOldPassword === "") {
+        alert("Please fill all fields.");
+        return false;
+    }
+
+    showNoticeModalChange();
+
+    // Prevent form submission
+    return false;
+}
+
+function showNoticeModalChange() {
+    const modal = new bootstrap.Modal(document.getElementById("noticeModal"));
+    modal.show();
+
+    // Clear input fields after showing the modal
+    document.getElementById("newpassword").value = "";
+    document.getElementById("oldpassword").value = "";
+}

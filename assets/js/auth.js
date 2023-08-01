@@ -8,9 +8,8 @@ function validateFormForgot() {
         emailInput.classList.add("is-valid");
         emailInput.classList.remove("is-invalid");
 
-        // Tampilkan modal jika input sesuai
         showNoticeModalForgot();
-        return false; // Untuk mencegah submit form
+        return false;
     }
 }
 
@@ -45,7 +44,6 @@ function showNoticeModalRegis() {
     const modal = new bootstrap.Modal(document.getElementById("noticeModal"));
     modal.show();
 
-    // Bersihkan input setelah modal tampil
     document.getElementById("exampleInputName1").value = "";
     document.getElementById("exampleInputEmail1").value = "";
     document.getElementById("exampleInputPassword1").value = "";
